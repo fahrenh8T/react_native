@@ -1,50 +1,42 @@
-# Welcome to your Expo app 👋
+# 📱 Understanding Navigation in an Expo App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+### **1. Create a New Expo App**
+```sh
+npx create-expo-app@latest my-app
+cd my-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### **2. Start the Development Server**
+```sh
+npx expo start
+```
+This command starts Metro Bundler, which helps you run the app on an emulator or physical device.
 
-## Learn more
+### **3. Reset Project (If Needed)**
+If you encounter errors or need a clean slate, reset the project:
+```sh
+npx expo run reset-project
+```
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+---
+## 🚀 **Developer Tools**
+### **Using React/Redux/React-Native Snippets extension**
+For faster coding, on VS code (ES7+ React/Redux/React-Native snippets by dsznajder). This allows auto-generating component templates with commands like on (tsx, jsx):
+rnfes 
+```sh
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+const test = () => {
+  return (
+    <View>
+      <Text>test</Text>
+    </View>
+  )
+}
 
-## Join the community
+export default test
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+const styles = StyleSheet.create({})
+```
