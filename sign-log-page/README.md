@@ -1,4 +1,4 @@
-# 📱 Understanding Navigation in an Expo App
+# 📱 Setting up Expo App
 
 ### **1. Create a New Expo App**
 ```sh
