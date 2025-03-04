@@ -23,7 +23,9 @@ npx expo run reset-project
 ## 🚀 **Developer Tools**
 ### **Using React/Redux/React-Native Snippets extension**
 For faster coding, on VS code (ES7+ React/Redux/React-Native snippets by dsznajder). This allows auto-generating component templates with commands like on (tsx, jsx):
-rnfes 
+```sh
+rnfes
+``` 
 ```sh
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
